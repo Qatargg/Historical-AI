@@ -1,0 +1,13 @@
+{
+  "name": "echoes-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node dev.js",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "start": "npm run start --prefix backend",
+    "build": "npm run build --prefix frontend"
+  }
+}
