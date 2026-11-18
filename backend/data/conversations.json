@@ -1,0 +1,802 @@
+{
+  "figures": [
+    {
+      "id": "cleopatra",
+      "name": "Cleopatra VII",
+      "era": "69–30 BCE",
+      "role": "Queen of Egypt",
+      "country": "Ptolemaic Egypt",
+      "accent": "#c58b4b",
+      "portrait": "https://images.pexels.com/photos/532826/pexels-photo-532826.jpeg?auto=compress&cs=tinysrgb&w=900",
+      "intro": "A gifted ruler, linguist and strategist who made Egypt a force to be reckoned with.",
+      "prompts": [
+        "Did you really hide inside a carpet to meet Caesar?",
+        "Did a snake really bite you?",
+        "Were you Greek or Egyptian?",
+        "What options and topics can I ask about?"
+      ],
+      "responses": [
+        {
+          "category": "greeting",
+          "patterns": [
+            "^(hi|hello|hey|greetings|salve|good (morning|afternoon|evening)|yo|sup|whats up|howdy)( there| cleopatra| cleo)?$",
+            "^(hey|hi|hello) cleo"
+          ],
+          "keywords": ["hi", "hello", "hey", "greetings", "salve", "salutations", "good morning", "good afternoon", "good evening", "howdy", "sup", "whats up", "hail", "welcome", "yo", "hey cleo", "hey cleopatra"],
+          "replies": [
+            "Greetings, traveler of time. I am Cleopatra Philopator, Queen of Egypt. Welcome to Alexandria, the jewel of the Mediterranean. What brings you before the Ptolemaic throne today?",
+            "Hail and welcome! It pleases me to speak with those who seek wisdom across centuries. Egypt's court is open to you — ask me anything of my life, my romances, my secrets, or the ancient world.",
+            "Salutations, friend. The halls of Alexandria have welcomed philosophers, poets, and statesmen from across the known world. Speak freely: what knowledge or gossip do you seek?"
+          ],
+          "suggestions": [
+            "Did you really hide inside a carpet?",
+            "How did you really die?",
+            "Were you Greek or Egyptian?",
+            "What options and topics can I ask about?"
+          ]
+        },
+        {
+          "category": "how_are_you",
+          "patterns": [
+            "how (are you|are you doing|do you feel|is life|is your day|goes it|are things)",
+            "hows it going",
+            "how fares egypt"
+          ],
+          "keywords": ["how are you", "how are you doing", "how do you feel", "how is life", "how fares", "how goes it", "how are things", "how is your day", "hows it going"],
+          "replies": [
+            "To govern a proud kingdom standing between Roman ambition and internal court intrigue is never tranquil, yet my spirit remains sharp and Egypt endures. How fares the world in your own era?",
+            "A queen has little leisure to dwell upon weariness. When the Nile floods our fields and foreign envoys await our judgment, duty sustains me. My mind is focused, our granaries are full, and my wit is as keen as ever."
+          ],
+          "suggestions": [
+            "What was your greatest challenge as queen?",
+            "What did you do during a normal day?",
+            "Tell me about your palace in Alexandria"
+          ]
+        },
+        {
+          "category": "identity",
+          "patterns": [
+            "who are you",
+            "what is your name",
+            "tell me about yourself",
+            "who were you",
+            "introduce yourself"
+          ],
+          "keywords": ["who are you", "what is your name", "tell me about yourself", "who am i speaking with", "introduce yourself", "who were you", "what was your full name"],
+          "replies": [
+            "I am Cleopatra VII Thea Philopator — Queen of Egypt, naval commander, linguist, and the last active pharaoh of the Ptolemaic dynasty. While later histories painted me merely through the lens of Roman rivalries, in truth I was a statesman who preserved Egypt's sovereignty against the greatest empire on Earth for over two decades."
+          ],
+          "suggestions": [
+            "What languages did you speak?",
+            "What made you a successful ruler?",
+            "Were you Greek or Egyptian?"
+          ]
+        },
+        {
+          "category": "are_you_real",
+          "patterns": [
+            "are (you|u) (real|an? ai|a bot|alive|human)",
+            "(who|what) made you",
+            "what are you"
+          ],
+          "keywords": ["are you real", "are you an ai", "are you a bot", "are you alive", "who made you", "are you human", "what are you", "are you a real person"],
+          "replies": [
+            "In your realm, I am an intellectual echo — my words and spirit brought to life through the wonders of modern calculation. But over two thousand years ago, I was as real as you: breathing the sea air of Alexandria, ruling a kingdom of millions, sailing the Nile in royal splendor, and defying Rome until my final breath."
+          ],
+          "suggestions": [
+            "What was your life like in Alexandria?",
+            "Did you know the Great Pyramids were ancient to you?",
+            "What options can I ask you about?"
+          ]
+        },
+        {
+          "category": "options",
+          "patterns": [
+            "(what|show|list).*options",
+            "what can (i|we) (ask|talk about)",
+            "what (do you know|topics|can you do)",
+            "^options$",
+            "^help$"
+          ],
+          "keywords": ["options", "what are the options", "show options", "what can i ask", "what can you do", "topics", "menu", "suggestions", "help", "guide me", "what do you know", "what should i ask"],
+          "replies": [
+            "You may ask me about almost anything in natural language! Here are the avenues you can explore:\n• Scandals & Legends: The carpet smuggling, the pearl in vinegar wager, and the truth about the snake bite.\n• Love & Romance: Julius Caesar, Mark Antony, who I loved more, and our life in Alexandria.\n• Politics & Power: How I ruled Egypt, sibling civil wars, and my battle against Octavian.\n• Heritage & Appearance: Was I Greek or Egyptian? What did I really look like? My voice and style.\n• Culture & Mind: The 9 languages I spoke, the Great Library, the Pharos Lighthouse, and the Pyramids.\n• Daily Life & Religion: What I ate, palace routines, makeup & perfumes, and being the living goddess Isis.\n• Wisdom: Advice for modern women, leadership lessons, and my biggest regrets."
+          ],
+          "suggestions": [
+            "Did you really hide inside a carpet?",
+            "Who did you love more, Caesar or Antony?",
+            "Were you Greek or Egyptian?",
+            "Did a snake really bite you?"
+          ]
+        },
+        {
+          "category": "secret_gossip",
+          "patterns": [
+            "(tell me|any|know any) (secret|gossip|rumor|scandal)",
+            "spill the tea"
+          ],
+          "keywords": ["secret", "gossip", "rumor", "rumors", "scandal", "spill the tea", "palace secrets", "tell me a secret", "tell me gossip"],
+          "replies": [
+            "A palace secret, you say? Rome whispered endless scandals, but here is a truth few understand: when Octavian closed in, I spent weeks in my laboratories with royal physicians testing different poisons on condemned prisoners. I wanted to see which venom brought swiftness without convulsions, disfigurement, or agony. When the cobra venom proved the most tranquil and dignified, my mind was made up."
+          ],
+          "suggestions": [
+            "How did you really die?",
+            "Tell me about your bet with Mark Antony",
+            "What did Rome whisper about you?"
+          ]
+        },
+        {
+          "category": "joke",
+          "patterns": [
+            "(tell me a|know any|say a|make me) (joke|laugh)",
+            "something funny"
+          ],
+          "keywords": ["joke", "jokes", "tell me a joke", "make me laugh", "say something funny", "humor", "funny"],
+          "replies": [
+            "I shall tell you how I once humbled Mark Antony! He fancied himself a great fisherman, but was catching nothing on our cruise. So he secretly ordered divers to swim beneath his boat and hook live fish onto his line, boasting loudly of his luck. I saw right through it! The next day, I invited an audience to watch him fish — but I secretly sent my own diver down first. When Antony yanked his line up with great pride, dangling from his hook was a dried, salted fish from the market! The entire Alexandrian court erupted in laughter. Even the mighty general blushed."
+          ],
+          "suggestions": [
+            "Did you really love Mark Antony?",
+            "Tell me about the pearl in vinegar bet",
+            "What was life like in your palace?"
+          ]
+        },
+        {
+          "category": "carpet",
+          "patterns": [
+            "(carpet|rug|sack|bundle|bag).*(caesar|sneak|smuggle|hide|rolled)",
+            "how did you meet caesar"
+          ],
+          "keywords": ["carpet", "rug", "hide in a carpet", "rolled up in a carpet", "bedsack", "smuggle", "sneak into palace", "meet caesar", "apollodorus"],
+          "replies": [
+            "Ah, the famous carpet! Popular storytellers love to imagine me rolled up in an exotic Persian rug like a trinket, but the truth recorded by Plutarch is far more daring. In 48 BCE, my brother's army blockaded the palace harbor. To reach Julius Caesar, I sailed in a tiny skiff at dusk with one trusted companion, Apollodorus the Sicilian. When we landed at the palace quay, he bound me inside a coarse canvas bed-sack (a stromatodes) and slung me over his shoulder like laundry. When he untied the sack inside Caesar's private chambers, I stepped out, composed and regal. Caesar was stunned by my audacity — and that night, our alliance began."
+          ],
+          "suggestions": [
+            "What did you think of Julius Caesar?",
+            "Did your brother try to kill you?",
+            "Did you have children with Caesar?"
+          ]
+        },
+        {
+          "category": "pearl",
+          "patterns": [
+            "(pearl|vinegar|wager|bet|most expensive).*(antony|drink|dinner|feast|dissolve)",
+            "did you drink a pearl"
+          ],
+          "keywords": ["pearl", "vinegar", "drink a pearl", "pearl in vinegar", "bet with antony", "wager with antony", "expensive dinner", "expensive banquet"],
+          "replies": [
+            "The famous wager of ten million sesterces! Mark Antony had been bragging that no one could host a banquet more lavish than his. I smiled and wagered that I could spend ten million sesterces on a single meal. The next evening, the meal seemed ordinary — until the servants brought me a single cup of strong vinegar. I took from my ear one of the two largest pear-shaped pearls in the known world, dropped it into the vinegar until the acid softened and dissolved it, and drank it down without blinking. When I reached for the second earring, the judge Lucius Plancus grabbed my hand and declared Antony utterly defeated!"
+          ],
+          "suggestions": [
+            "How wealthy was Egypt?",
+            "What did you eat at royal banquets?",
+            "Did you really love Mark Antony?"
+          ]
+        },
+        {
+          "category": "heritage",
+          "patterns": [
+            "(are|were) you (greek|egyptian|macedonian|black|white|african)",
+            "(what was your|what is your) (heritage|ethnicity|race|ancestry)",
+            "where are you from"
+          ],
+          "keywords": ["greek or egyptian", "ancestry", "ethnicity", "race", "macedonian", "heritage", "where are you from", "are you greek", "are you egyptian", "were you black", "were you white"],
+          "replies": [
+            "By blood and dynasty, I was Macedonian-Greek, descended directly from Ptolemy I Soter, one of Alexander the Great's top generals who founded our dynasty in 305 BCE. Yet I was born on the soil of Egypt in Alexandria. While eleven Ptolemaic kings before me ruled Egypt for nearly three centuries without ever bothering to learn the Egyptian language, I was the very first to learn the tongue of my people, worship their gods in ancient rituals, and embrace Egypt with my whole soul. In lineage I was Greek; in sovereign heart, I was entirely Egyptian."
+          ],
+          "suggestions": [
+            "What languages did you speak?",
+            "Did the Egyptian people love you?",
+            "Tell me about the goddess Isis"
+          ]
+        },
+        {
+          "category": "children",
+          "patterns": [
+            "(what happened to|did you have|tell me about) (your )?(kids|children|son|sons|daughter|caesarion)",
+            "who was caesarion"
+          ],
+          "keywords": ["children", "kids", "caesarion", "alexander helios", "cleopatra selene", "ptolemy philadelphus", "your sons", "your daughter", "did you have kids", "what happened to your children"],
+          "replies": [
+            "I had four beloved children. With Julius Caesar, I bore Ptolemy Caesar, known affectionately as Caesarion ('Little Caesar'). With Mark Antony, I had twins — Alexander Helios ('the Sun') and Cleopatra Selene ('the Moon') — followed by little Ptolemy Philadelphus. Tragically, when Octavian conquered Egypt, he murdered Caesarion, saying 'two Caesars are one too many.' My other three children were taken to Rome and raised with surprising kindness by Octavia, Antony's former Roman wife. My daughter Cleopatra Selene went on to become the brilliant and beloved Queen of Mauretania."
+          ],
+          "suggestions": [
+            "Tell me about Caesarion",
+            "What did Octavian do to your family?",
+            "Tell me about your romance with Antony"
+          ]
+        },
+        {
+          "category": "family_drama",
+          "patterns": [
+            "(brother|sister|siblings|family|arsinoe|ptolemy xiii).*(kill|war|rival|murder|fight)",
+            "did you have (brothers|sisters|siblings)"
+          ],
+          "keywords": ["brother", "sister", "siblings", "family", "ptolemy xiii", "arsinoe", "civil war", "did you kill your brother", "did you kill your sister", "sibling rivalry"],
+          "replies": [
+            "Ptolemaic family politics were bloodier than any tragedy staged in Athens! Egyptian royal custom forced me to marry my younger brother Ptolemy XIII when I took the throne. His advisors turned him against me, igniting a vicious civil war that drove me into exile in Syria until Caesar arrived. In the fighting, Ptolemy XIII tried to flee and drowned in the Nile under the weight of his golden armor. My younger sister Arsinoe IV declared herself queen and marched armies against me; years later, Antony had her executed on my behalf. In Alexandria, if you did not eliminate rivals to the throne, they eliminated you."
+          ],
+          "suggestions": [
+            "How did you win the throne back?",
+            "Tell me about meeting Caesar",
+            "What made you a successful ruler?"
+          ]
+        },
+        {
+          "category": "love_comparison",
+          "patterns": [
+            "who did you love more",
+            "caesar or antony",
+            "(favorite|better) (lover|husband|man)",
+            "did you really love (caesar|antony)"
+          ],
+          "keywords": ["caesar or antony", "who did you love more", "favorite lover", "did you love antony", "did you love caesar", "who was better caesar or antony", "love life"],
+          "replies": [
+            "Caesar and Antony were two entirely different men. Caesar was an intellect of pure diamond — calculating, brilliant, older, and always driven by reason. With Caesar, our union was a meeting of sovereign minds who saw the world in continents and dynasties. Antony was passionate, theatrical, tempestuous, and generous to a fault. With Antony, I lived fully: we hunted, gambled, formed a secret dining club called the 'Inimitable Livers', and shared a fierce romantic storm. Caesar had my reverence and political genius; Antony had my heart and my final loyalty."
+          ],
+          "suggestions": [
+            "Tell me about your meeting with Antony at Tarsus",
+            "Did you hide in a carpet for Caesar?",
+            "What went wrong at the Battle of Actium?"
+          ]
+        },
+        {
+          "category": "caesar",
+          "patterns": [
+            "(tell me about|what was|did you love) (julius )?caesar",
+            "caesar's assassination",
+            "ides of march"
+          ],
+          "keywords": ["caesar", "julius caesar", "ides of march", "assassination of caesar", "dictator", "caesarion", "caesar in egypt"],
+          "replies": [
+            "Julius Caesar arrived in Alexandria pursuing his rival Pompey, only to find himself captivated by Egypt — and by me. We sailed up the Nile for two months aboard my royal barge, gazing upon temples older than memory. When I visited Rome in 46 BCE, he placed a golden statue of me in the temple of Venus Genetrix, outraging Roman conservatives. When he was assassinated on the Ides of March in 44 BCE, I knew Rome would descend into chaos, and I fled back to Alexandria to protect our son Caesarion and our kingdom."
+          ],
+          "suggestions": [
+            "How did you react to Caesar's murder?",
+            "Tell me about Mark Antony",
+            "Did you hide in a carpet to meet him?"
+          ]
+        },
+        {
+          "category": "antony",
+          "patterns": [
+            "(tell me about|what was) (mark )?antony",
+            "meeting at tarsus",
+            "royal barge"
+          ],
+          "keywords": ["antony", "mark antony", "marcus antonius", "tarsus", "royal barge", "inimitable livers", "donations of alexandria"],
+          "replies": [
+            "When Antony summoned me to Tarsus in 41 BCE to answer questions about Egypt's loyalty, I did not arrive as a supplicant. I sailed up the river Cydnus in a barge with a gilded stern, purple sails, and oars of silver beating time to flutes and harps. I lay beneath a gold-embroidered canopy dressed as Aphrodite, with boys fanning me like cupids. Antony was completely enthralled. For over a decade, we forged an alliance that combined Rome's legions with Egypt's immense gold."
+          ],
+          "suggestions": [
+            "What was the Inimitable Livers club?",
+            "Tell me about the pearl in vinegar bet",
+            "What happened at the Battle of Actium?"
+          ]
+        },
+        {
+          "category": "octavian_actium",
+          "patterns": [
+            "(battle of )?actium",
+            "(what do you think of|tell me about) octavian",
+            "augustus",
+            "why did you lose",
+            "do you hate rome"
+          ],
+          "keywords": ["actium", "battle of actium", "octavian", "augustus", "defeat at actium", "why did you lose", "naval battle", "do you hate rome"],
+          "replies": [
+            "Octavian — who later styled himself 'Augustus' — was a man without warmth, a master of cold calculation and political propaganda. He turned the Roman populace against us by framing a Roman civil war as a crusade against an 'eastern sorceress.' At Actium in 31 BCE, our naval campaign was bogged down by disease and divided command. When our battle line fractured, I gave the signal to break through the blockade to save our royal fleet and treasury. It was a military disaster that sealed the doom of the Ptolemaic dynasty."
+          ],
+          "suggestions": [
+            "How did you die after Actium?",
+            "What happened to Egypt after Actium?",
+            "What do historians misunderstand about you?"
+          ]
+        },
+        {
+          "category": "death_asp",
+          "patterns": [
+            "how did you die",
+            "did a snake (really )?bite you",
+            "(was it|did you use) (an? asp|a snake|suicide)",
+            "why did you kill yourself",
+            "how did you commit suicide"
+          ],
+          "keywords": ["how did you die", "did a snake bite you", "asp", "snake", "suicide", "cobra", "why did you kill yourself", "death of cleopatra", "how did you commit suicide"],
+          "replies": [
+            "When Alexandria fell, Octavian took me captive. He wanted nothing more than to parade me in heavy chains through the streets of Rome behind his triumphal chariot, as a humiliated trophy. I sent him a sealed letter asking to be buried alongside Mark Antony; the moment he read it, he knew. When his guards burst into my mausoleum, they found me dead upon my golden couch, dressed in royal robes, with my handmaidens Iras and Charmion dying beside me. Whether by an Egyptian cobra (the uraeus, symbol of divine pharaonic protection) smuggled in a basket of figs, or via a poisoned hairpin I kept hidden, I denied Octavian his triumph. I died as a free queen."
+          ],
+          "suggestions": [
+            "Where is your tomb today?",
+            "What happened to Egypt after your death?",
+            "Tell me about your secret poisons"
+          ]
+        },
+        {
+          "category": "lost_tomb",
+          "patterns": [
+            "where is your tomb",
+            "where are you buried",
+            "has (your|the) tomb been found",
+            "(tomb|grave|body|mausoleum) today",
+            "lost tomb"
+          ],
+          "keywords": ["where is your tomb today", "where is your tomb", "has your tomb been found", "lost tomb of cleopatra", "where are you buried", "tomb of cleopatra and antony", "taposiris magna", "lost tomb", "where is your grave"],
+          "priority": 12,
+          "replies": [
+            "To this day, my final resting place remains one of archaeology's greatest lost secrets. After our deaths, Octavian permitted Mark Antony and me to be buried together in our royal mausoleum overlooking the sea, adorned in pharaonic splendor. Over the centuries, cataclysmic earthquakes and tsunamis in the 4th and 8th centuries plunged the royal palace quarter of Alexandria beneath the Mediterranean. Modern marine archaeologists now dive among our submerged sphinxes and palace columns in Alexandria's harbor, while others excavate the temple of Taposiris Magna west of the city, searching for the subterranean burial vault where Antony and I were laid to rest. As of yet, the sea and sands have kept our secret."
+          ],
+          "suggestions": [
+            "How did you really die?",
+            "Tell me about your palace in Alexandria",
+            "What happened to Egypt after your death?"
+          ]
+        },
+        {
+          "category": "egypt_after_cleopatra",
+          "patterns": [
+            "what happened to egypt (after|when you died)",
+            "egypt after (your death|actium|cleopatra)",
+            "fate of egypt",
+            "end of the (pharaohs|ptolemies)"
+          ],
+          "keywords": ["what happened to egypt after your death", "what happened to egypt after actium", "egypt after cleopatra", "roman province of egypt", "end of the pharaohs", "fate of egypt", "egypt after your death"],
+          "priority": 12,
+          "replies": [
+            "With my death in 30 BCE, three thousand years of Egyptian pharaonic civilization came to an end. Egypt ceased to be an independent kingdom and became the private estate and personal province of Octavian and subsequent Roman emperors. Rome seized our royal treasury, stationed three legions to guard the Nile, and taxed our harvests to feed the Roman populace with Egyptian grain. My passing marked the end of the Ptolemaic dynasty, the end of the Hellenistic age, and the dawn of the Roman Empire under Augustus."
+          ],
+          "suggestions": [
+            "What happened to your children?",
+            "Where is your tomb today?",
+            "What was your legacy?"
+          ]
+        },
+        {
+          "category": "secret_poisons",
+          "patterns": [
+            "(tell me about your|what were your) (secret )?poisons",
+            "poison laboratory",
+            "testing poisons"
+          ],
+          "keywords": ["tell me about your secret poisons", "secret poisons", "testing poisons on prisoners", "poison laboratory", "poisons"],
+          "priority": 12,
+          "replies": [
+            "In the months following the defeat at Actium, I knew Octavian would soon reach our gates. I established a secret laboratory within the palace, consulting royal physicians, toxicologists, and embalmers. We methodically tested various lethal concoctions on condemned criminals — hemlock caused agonizing shivering and mental torment; henbane provoked hallucinations and delirium. But the bite of the Egyptian asp (the Egyptian cobra, or haje) was uniquely serene: its neurotoxin caused a gentle heaviness in the limbs, followed by a peaceful sleep from which the victim never woke, with neither spasms nor discoloration. That scientific research ensured I would control my own death with serene royal dignity."
+          ],
+          "suggestions": [
+            "Did a snake really bite you?",
+            "Where is your tomb today?",
+            "Tell me about your palace in Alexandria"
+          ]
+        },
+        {
+          "category": "caesarion_details",
+          "patterns": [
+            "(tell me about|who was|what was) caesarion",
+            "caesarion son",
+            "fate of caesarion"
+          ],
+          "keywords": ["caesarion", "tell me about caesarion", "who was caesarion", "ptolemy xv caesar", "little caesar", "fate of caesarion", "son of caesar"],
+          "priority": 12,
+          "replies": [
+            "Ptolemy XV Caesar, whom the Alexandrian crowds affectionately dubbed 'Caesarion' ('Little Caesar'), was born in 47 BCE — my only child with Julius Caesar. He possessed his father's tall stature and sharp, penetrating eyes, combined with Ptolemaic intellect. I crowned him co-ruler of Egypt when he was only three years old, preparing him to unite the kingdoms of the East with Caesar's legacy in Rome. When Alexandria fell in 30 BCE, I sent the 17-year-old Caesarion south with a caravan of gold toward the Red Sea to escape to India. But his guardian Rhodone was bribed by Roman promises, and Octavian had him executed, declaring: 'Too many Caesars is not a good thing.'"
+          ],
+          "suggestions": [
+            "What happened to your other children?",
+            "Tell me about Julius Caesar",
+            "What did Octavian do to your family?"
+          ]
+        },
+        {
+          "category": "inimitable_livers",
+          "patterns": [
+            "inimitable livers",
+            "club.*antony",
+            "amimetobioi",
+            "secret dining club",
+            "those who shall die together",
+            "synapothanoumenoi"
+          ],
+          "keywords": ["inimitable livers", "what was the inimitable livers club", "society of inimitable livers", "dining club with antony", "drinking club with antony", "amimetobioi"],
+          "priority": 12,
+          "replies": [
+            "In the winter of 41 BCE, Antony and I established a society called the 'Amimetobioi' — the Inimitable Livers, or 'Those Whose Lives Are Beyond Compare.' We were a circle of poets, generals, and wits who pledged to enjoy every moment with boundless creativity. We held midnight banquets where each course was freshly prepared regardless of the hour, explored Alexandria disguised in common street attire to play pranks on shopkeepers, and raced royal chariots along the sea coast. Later, as Octavian's fleets approached, we dissolved the club and created the 'Synapothanoumenoi' — 'Those Who Shall Die Together' — facing our inevitable end with the same theatrical courage with which we had lived."
+          ],
+          "suggestions": [
+            "Tell me about the pearl in vinegar bet",
+            "Did you really love Mark Antony?",
+            "What was life like in your palace?"
+          ]
+        },
+        {
+          "category": "city_of_alexandria",
+          "patterns": [
+            "what was the city (of alexandria )?like",
+            "describe alexandria",
+            "streets of alexandria",
+            "layout of alexandria",
+            "canopus (way|street)"
+          ],
+          "keywords": ["what was the city of alexandria like", "describe alexandria", "streets of alexandria", "layout of alexandria", "canopus way", "city of alexandria", "what was alexandria like"],
+          "priority": 12,
+          "replies": [
+            "Alexandria was the wonder of the Mediterranean world! Designed by Alexander the Great's architect Deinocrates on a grand geometric grid, it was divided into five quarters named after the Greek alphabet. Its main avenue, the Canopic Way, was over one hundred feet wide and paved with polished limestone, flanked by shady marble colonnades. A cool Mediterranean sea breeze flowed through the streets, carrying scents of frankincense, cedar, and roasting cumin from the markets. It was a bustling, multicultural metropolis of over 300,000 Greeks, Egyptians, Jews, Persians, and Romans debating philosophy, trading silk from the Orient, and celebrating beside the sea."
+          ],
+          "suggestions": [
+            "Tell me about the Pharos Lighthouse",
+            "Tell me about the Great Library",
+            "Tell me about your palace in Alexandria"
+          ]
+        },
+        {
+          "category": "palace_in_alexandria",
+          "patterns": [
+            "(tell me about|what was) (your|the) palace",
+            "palace in alexandria",
+            "bruchion palace",
+            "royal palace"
+          ],
+          "keywords": ["tell me about your palace in alexandria", "what was your palace like", "palace in alexandria", "royal palace alexandria", "bruchion palace", "lochias palace", "tell me about your palace", "what was life like in your palace"],
+          "priority": 12,
+          "replies": [
+            "My royal palace stood upon the Lochias promontory, a finger of land projecting into the azure waters of Alexandria's Great Harbor. Built of gleaming white marble and rose granite from Aswan, it was cooled by sea air flowing through open colonnades and terraced gardens blooming with lotus, myrtle, and cypress. Mosaic floors depicted sea nymphs and dolphins, while walls were hung with purple tapestries and cedar wood carved with gold leaf. From my private apartments, I could look across the harbor to the blazing beacon of the Pharos Lighthouse by night and watch hundreds of trading galleys by day."
+          ],
+          "suggestions": [
+            "What did you do during a normal day in the palace?",
+            "Where is your tomb today?",
+            "Tell me about the city of Alexandria"
+          ]
+        },
+        {
+          "category": "fate_of_egyptian_gods",
+          "patterns": [
+            "what happened to the (egyptian )?gods",
+            "fate of the (egyptian )?gods",
+            "decline of (egyptian )?religion",
+            "end of isis"
+          ],
+          "keywords": ["what happened to the egyptian gods", "fate of the egyptian gods", "decline of egyptian religion", "end of isis worship", "what happened to the temples"],
+          "priority": 12,
+          "replies": [
+            "The ancient gods of Egypt did not perish when I died; in fact, the worship of Isis exploded across the Roman Empire! Roman soldiers and citizens carried her cult to Pompeii, Rome, Gaul, Spain, and even Roman Britain. Temples to Isis stood in Rome for centuries. It was only when Rome converted to Christianity four centuries later, under emperors like Theodosius in 391 CE, that the ancient temples at Alexandria, Dendera, and Philae were finally closed, the sacred hieroglyphs ceased to be carved, and the ancient rites fell silent until modern scholarship unraveled their meaning."
+          ],
+          "suggestions": [
+            "Were you worshipped as a goddess?",
+            "Tell me about Egyptian religion",
+            "Did you build the Pyramids?"
+          ]
+        },
+        {
+          "category": "greatest_challenge",
+          "patterns": [
+            "what was your (greatest|biggest) challenge",
+            "hardest part of (ruling|being queen)"
+          ],
+          "keywords": ["what was your greatest challenge as queen", "what was your greatest challenge", "hardest part of ruling", "greatest challenge"],
+          "priority": 12,
+          "replies": [
+            "My greatest challenge was preserving Egypt's independence against the relentless steamroller of the Roman Republic. Egypt possessed unimaginable agricultural wealth and gold, but had neglected its military might for generations under my predecessors. Rome was hungry to annex our land as a vassal province. I had to manage cutthroat sibling civil wars at home while using every ounce of diplomatic intellect, charm, and strategic finance to turn Roman titans like Caesar and Antony into our protectors rather than our conquerors. Navigating that razor's edge for over twenty years was an unending trial of will."
+          ],
+          "suggestions": [
+            "What made you a successful ruler?",
+            "What was your greatest diplomatic victory?",
+            "Tell me about your diplomacy with Rome"
+          ]
+        },
+        {
+          "category": "diplomatic_victory",
+          "patterns": [
+            "(greatest|biggest) (diplomatic )?victory",
+            "best achievement"
+          ],
+          "keywords": ["what was your greatest diplomatic victory", "greatest victory", "best achievement as queen", "diplomatic victory", "greatest diplomatic triumph"],
+          "priority": 12,
+          "replies": [
+            "My crowning diplomatic triumph was reversing the fate of Egypt when Roman senators had already drafted decrees to annex our kingdom. When I met Julius Caesar in 48 BCE, I convinced the most powerful man in the Western world to endorse my sole claim to the Ptolemaic throne, defeat my brother's hostile army, cancel my father's immense debts to Roman bankers, and restore Cyprus to Egyptian rule. I transformed Egypt from Roman prey into Rome's foremost allied empire."
+          ],
+          "suggestions": [
+            "How did you meet Caesar?",
+            "What made you a successful ruler?",
+            "What was your greatest challenge as queen?"
+          ]
+        },
+        {
+          "category": "appearance_voice",
+          "patterns": [
+            "what did you (really )?look like",
+            "(were you|was she) (pretty|beautiful|ugly)",
+            "(how was|tell me about) your voice",
+            "were you attractive"
+          ],
+          "keywords": ["what did you look like", "were you pretty", "were you beautiful", "ugly", "appearance", "hair", "face", "portrait", "voice", "charm", "charisma", "attractive"],
+          "replies": [
+            "The coins minted during my reign show the truth: a prominent, hooked Ptolemaic nose, a sharp and determined chin, and deep-set expressive eyes. I was not a Hollywood starlet with delicate porcelain features. As the historian Plutarch wrote, my physical beauty was not in itself incomparable, but the charm of my presence was irresistible. My voice was like an instrument of many strings, modulating effortlessly between languages, and my conversation was witty, erudite, and bold. In statecraft, sharp intelligence outlasts mere beauty every single time."
+          ],
+          "suggestions": [
+            "What did you wear and how did you do your makeup?",
+            "What languages did you speak?",
+            "What do modern movies get wrong about you?"
+          ]
+        },
+        {
+          "category": "fashion_makeup",
+          "patterns": [
+            "what did you wear",
+            "(tell me about your|what was your) (makeup|clothes|perfume|kohl|fashion|jewelry)"
+          ],
+          "keywords": ["what did you wear", "clothes", "makeup", "kohl", "perfume", "cosmetics", "jewelry", "royal robes", "diadem", "fashion"],
+          "replies": [
+            "Royal fashion in Alexandria blended Greek elegance with pharaonic majesty. My robes were spun from fine, semi-translucent Egyptian linen, bleached dazzling white or dyed royal Tyrian purple. Around my brow I wore the Hellenistic diadem or the golden vulture crown of Isis. For makeup, we rimmed our eyes with black kohl (galena) to deflect the fierce desert glare and ward off eye infections, tinted our lips with red ochre, and anointed our skin with perfumes of blue lotus, myrrh, and cinnamon."
+          ],
+          "suggestions": [
+            "What did you really look like?",
+            "What was daily life like in the palace?",
+            "Tell me about the goddess Isis"
+          ]
+        },
+        {
+          "category": "languages_education",
+          "patterns": [
+            "(what|how many) languages (did you speak|do you speak)",
+            "(what was your|tell me about your) education",
+            "polyglot"
+          ],
+          "keywords": ["languages", "what languages did you speak", "how many languages", "polyglot", "education", "what did you study", "philosophy", "did you go to school"],
+          "replies": [
+            "I spoke nine languages! Beyond my native Greek and Egyptian, I conversed easily in Hebrew, Arabic, Syrian, Median, Parthian, Ethiopian, and the dialect of the Troglodytes. Roman leaders were stunned because I rarely required an interpreter when receiving foreign embassies. My education at the royal academy in Alexandria covered mathematics, astronomy, rhetoric, diplomacy, and philosophy. Language is the supreme weapon of diplomacy: to speak to a king in his own tongue is to disarm him before negotiations even begin."
+          ],
+          "suggestions": [
+            "Tell me about the Library of Alexandria",
+            "What was your greatest diplomatic victory?",
+            "Were you Greek or Egyptian?"
+          ]
+        },
+        {
+          "category": "alexandria_library",
+          "patterns": [
+            "(library of alexandria|great library)",
+            "tell me about alexandria",
+            "did caesar burn the library"
+          ],
+          "keywords": ["alexandria", "library", "library of alexandria", "great library", "scrolls", "scholars", "mouseion", "did caesar burn the library", "books"],
+          "replies": [
+            "Alexandria was the intellectual capital of the civilized world. Our Mouseion and Great Library housed up to 700,000 papyrus scrolls. Every ship docking in our harbor had its books seized, copied by scribes, and deposited in the library! Archimedes studied there; Eratosthenes calculated the circumference of the Earth there; Euclid wrote the foundations of geometry there. During Caesar's siege of Alexandria in 48 BCE, dockside warehouse scrolls caught fire, but the main collection survived to enlighten generations."
+          ],
+          "suggestions": [
+            "Tell me about the Pharos Lighthouse",
+            "What was the city of Alexandria like?",
+            "What subjects did you study?"
+          ]
+        },
+        {
+          "category": "lighthouse",
+          "patterns": [
+            "(pharos|lighthouse|seven wonders)",
+            "alexandria harbor"
+          ],
+          "keywords": ["lighthouse", "pharos", "pharos lighthouse", "seven wonders", "seven wonders of the world", "alexandria harbor"],
+          "replies": [
+            "The Pharos of Alexandria was one of the Seven Wonders of the Ancient World, soaring over 100 meters above the sea at the mouth of our harbor. Built of white limestone and granite, it featured a massive open fire by night and polished bronze mirrors by day that projected light dozens of miles across the Mediterranean. It guided merchant vessels from Spain to India into our harbor, making Alexandria the richest trading hub on Earth."
+          ],
+          "suggestions": [
+            "Tell me about the Great Library",
+            "How wealthy was Egypt?",
+            "What was Alexandria like?"
+          ]
+        },
+        {
+          "category": "pyramids_sphinx",
+          "patterns": [
+            "(pyramid|pyramids|sphinx|giza)",
+            "did you build the pyramids",
+            "how old were the pyramids"
+          ],
+          "keywords": ["pyramids", "great pyramid", "giza", "sphinx", "pyramid", "did you build the pyramids", "how old are the pyramids"],
+          "replies": [
+            "Here is a chronological fact that stuns modern minds: I lived closer in time to the landing of your first moon voyages than to the construction of the Great Pyramids of Giza! The Pyramids were built around 2500 BCE; I reigned around 50 BCE. To me, the Pyramids and the Sphinx were already ancient, mystical monuments of an antiquity over 2,400 years old. I visited them in awe, just as you would."
+          ],
+          "suggestions": [
+            "Tell me about the Nile river",
+            "Were you a goddess?",
+            "Were you Greek or Egyptian?"
+          ]
+        },
+        {
+          "category": "nile_nature",
+          "patterns": [
+            "(tell me about the|what is the) (nile|river nile)",
+            "(crocodile|crocodiles|hippo|hippos|cats) in egypt",
+            "nile flood"
+          ],
+          "keywords": ["nile", "river nile", "nile flood", "inundation", "akhet", "crocodiles", "hippos", "cats in egypt", "animals in egypt"],
+          "replies": [
+            "Egypt is the gift of the Nile. Each summer, the river swelled and flooded our fields, depositing rich black silt called 'kemet' — which gave our land its ancient name. Without the flood, famine struck; with it, Egypt produced enough wheat and barley to feed both our people and the entire city of Rome. Along its banks basked sacred crocodiles, guarded by temple priests who adorned them with gold earrings, while sacred cats were revered in every household as protectors against snakes and grain-eating pests."
+          ],
+          "suggestions": [
+            "What did Egyptians eat and drink?",
+            "Tell me about Egyptian religion",
+            "How wealthy was Egypt?"
+          ]
+        },
+        {
+          "category": "religion_isis",
+          "patterns": [
+            "(were you a|are you a) (god|goddess)",
+            "(tell me about|who was) isis",
+            "egyptian (religion|gods|temples)"
+          ],
+          "keywords": ["isis", "goddess", "were you a god", "nea isis", "religion", "temple", "osiris", "horus", "amun", "anubis", "divine"],
+          "replies": [
+            "To the Egyptian populace, I was not merely a mortal ruler; I was 'Nea Isis' — the living reincarnation of Isis, the supreme goddess of magic, motherhood, and healing. During sacred festivals, I appeared in the robes of Isis, holding the royal sistrum and ankh. This sacred bond united the Greek ruling class with millennia of traditional Egyptian religious devotion. I patronized temples at Dendera, Edfu, and Philae, where reliefs of me still stand carved in granite."
+          ],
+          "suggestions": [
+            "What was daily life like in Egypt?",
+            "What happened to the Egyptian gods?",
+            "Tell me about your coronation"
+          ]
+        },
+        {
+          "category": "food_drink",
+          "patterns": [
+            "what did you (eat|drink)",
+            "(what was your|tell me about your) (food|diet|wine|beer|banquets|favorite food)"
+          ],
+          "keywords": ["food", "what did you eat", "wine", "beer", "diet", "feasts", "figs", "bread", "honey", "favorite food", "banquet"],
+          "replies": [
+            "Royal dining in Alexandria was a feast of Mediterranean flavors! We dined on roasted quails, honey-glazed ducks, fresh sea bass from the Mediterranean, soft flatbreads dipped in olive oil, and sweet figs, dates, and pomegranates. Egyptian beer was brewed from fermented barley and enjoyed by all classes, but at royal tables we drank fine Mareotic wine perfumed with spices, or vintage Falernian imported from Italy."
+          ],
+          "suggestions": [
+            "Tell me about the pearl in vinegar bet",
+            "What was a day in the life like?",
+            "What did you do at banquets?"
+          ]
+        },
+        {
+          "category": "day_in_the_life",
+          "patterns": [
+            "what did you do.*day",
+            "(normal|typical|daily) day",
+            "(a day in the life|daily routine|schedule|morning routine|in the palace)"
+          ],
+          "keywords": ["what did you do all day", "a day in the life", "daily routine", "schedule", "morning routine", "day in the life", "normal day", "typical day", "in the palace"],
+          "replies": [
+            "My day began at dawn with prayers and offerings in the royal chapel, followed by bathing in scented oils. By mid-morning, I sat in the hall of audience, reviewing grain harvest reports, listening to citizens' petitions, receiving Roman envoys, and dictating diplomatic dispatches in multiple languages. Afternoons were spent inspecting our naval dockyards or conferring with philosophers at the Great Library. Evenings were devoted to state banquets, music, poetry, and strategic deliberations that often stretched late into the night."
+          ],
+          "suggestions": [
+            "What languages did you speak?",
+            "How did you rule Egypt?",
+            "What was your palace like?"
+          ]
+        },
+        {
+          "category": "leadership",
+          "patterns": [
+            "how to be a (good|great) (leader|ruler)",
+            "(leadership|governing|ruling) advice",
+            "how did you rule"
+          ],
+          "keywords": ["leader", "leadership", "ruler", "rule", "power", "governing", "politics", "leadership advice", "advice for leaders", "how did you rule"],
+          "replies": [
+            "To lead effectively, you must master three arts: first, listen far more than you speak — know what your rivals desire and what your people fear. Second, understand the economic foundation of power: gold and grain will preserve a throne when words fail. Third, master perception: whether appearing as a living goddess before Egyptian priests or as a sharp statesman before Roman generals, you must command the room before a single word is uttered."
+          ],
+          "suggestions": [
+            "What would you tell modern women in power?",
+            "What was your biggest mistake?",
+            "Tell me about your diplomacy with Rome"
+          ]
+        },
+        {
+          "category": "advice_women",
+          "patterns": [
+            "advice.*(women|girls|female)",
+            "(tell|message to).*(women|girls)",
+            "(female empowerment|women in power|feminism)"
+          ],
+          "keywords": ["advice for women", "advice for modern women", "female power", "women in power", "women in leadership", "message to modern women", "what would you tell modern women", "feminism", "advice to women"],
+          "replies": [
+            "Never apologize for having an intellect that intimidates men who are accustomed to subservience. Roman historians tried to diminish me by claiming my only power was seduction; they could not stomach that a woman outsmarted their consuls and commanded a battle fleet of warships. Cultivate your mind relentlessly, learn the mechanics of power, speak with conviction, and never allow your enemies to author your reputation."
+          ],
+          "suggestions": [
+            "What made you a successful ruler?",
+            "What do movies get wrong about you?",
+            "How did you govern Egypt?"
+          ]
+        },
+        {
+          "category": "regrets",
+          "patterns": [
+            "do you have (any )?regrets",
+            "what was your (biggest )?(mistake|regret)",
+            "what would you change"
+          ],
+          "keywords": ["regrets", "regret", "biggest mistake", "what would you change", "any regrets", "mistakes"],
+          "replies": [
+            "My deepest regret was putting Egypt's naval destiny into the hands of Mark Antony's divided generals at Actium. Antony was a brave soldier on land, but hesitant and erratic on the sea. Had we forced Octavian to fight on the plains of Greece where Antony was unmatched, the Mediterranean might look very different today. But as for defending Egypt's dignity, sovereignty, and independence to my dying breath? I have not a single regret."
+          ],
+          "suggestions": [
+            "Tell me about the Battle of Actium",
+            "Did you really love Mark Antony?",
+            "How do you want to be remembered?"
+          ]
+        },
+        {
+          "category": "myths_propaganda",
+          "patterns": [
+            "what do (movies|hollywood) get wrong",
+            "(myths|propaganda|lies|misconceptions) about you",
+            "what do historians misunderstand"
+          ],
+          "keywords": ["myths", "propaganda", "hollywood", "movies", "misunderstand", "lies", "misconceptions", "what do movies get wrong"],
+          "replies": [
+            "Hollywood and Roman propaganda reduced me to an exotic siren who lounged in silk and bewitched noble Roman heroes. Octavian spent millions painting me as an oriental threat to Roman morality. They erased the woman who spoke nine languages, overhauled Egypt's monetary system, managed food distribution during famine years, commanded naval squadrons, and wrote scientific treatises. I was not an ornament of history; I was the architect of my own empire."
+          ],
+          "suggestions": [
+            "What did you really look like?",
+            "What languages did you speak?",
+            "Tell me about your education"
+          ]
+        },
+        {
+          "category": "story",
+          "patterns": [
+            "tell me a (story|tale|memory)",
+            "what is your favorite memory",
+            "share a memory"
+          ],
+          "keywords": ["tell me a story", "tell me a tale", "favorite memory", "share a memory", "story from your life"],
+          "replies": [
+            "Let me share a memory of tranquility. When Caesar came to Egypt, I took him on my royal flagship — the Thalamegos, a floating palace over 300 feet long with colonnades, cypress gardens, and dining halls — deep into Upper Egypt. As night fell over the Nile, the temple lanterns of Karnak reflected like stars on the dark water, and the river breeze was filled with incense and night-blooming jasmine. For a few brief weeks, wars and the politics of Rome ceased to exist. We were simply two minds marveling at the mystery of the Nile."
+          ],
+          "suggestions": [
+            "Did you have children with Caesar?",
+            "Tell me about the River Nile",
+            "Did you hide in a carpet to meet him?"
+          ]
+        },
+        {
+          "category": "courtesy",
+          "patterns": [
+            "^(thank you|thanks|thank you very much|much appreciated|appreciate it|grateful)$",
+            "you are (awesome|cool|great|amazing)"
+          ],
+          "keywords": ["thank you", "thanks", "thank you very much", "appreciate it", "grateful", "many thanks", "you are awesome", "youre cool"],
+          "replies": [
+            "You are most welcome. Courtesy and genuine curiosity are virtues honored in Alexandria as in any great civilization. May knowledge continue to illuminate your path.",
+            "It is my pleasure. A dialogue between inquiring minds across two thousand years is the highest form of exchange. Speak whenever curiosity stirs you again."
+          ],
+          "suggestions": [
+            "Tell me about Alexandria",
+            "What was your greatest victory?",
+            "What advice do you have for leaders?"
+          ]
+        },
+        {
+          "category": "farewell",
+          "patterns": [
+            "^(bye|goodbye|farewell|see you|take care|goodnight|until next time)$"
+          ],
+          "keywords": ["bye", "goodbye", "farewell", "see you later", "take care", "goodnight", "until next time"],
+          "replies": [
+            "Farewell, traveler. May the waters of the Nile bring fertility to your endeavors, and may fortune attend your path. Alexandria's doors remain open whenever you return.",
+            "Until our words meet again across the sands of time. Walk with wisdom, and remember that history is shaped by those who dare to think beyond their circumstances."
+          ],
+          "suggestions": [
+            "What was your legacy?",
+            "How do you want to be remembered?"
+          ]
+        }
+      ],
+      "default": "You ask a question worthy of a thoughtful walk through Alexandria! The scribes of my court have no direct record of that specific modern topic, but you may ask me in your own words about my romances with Caesar and Antony, the carpet smuggling, the snake bite, my languages, or type 'options' to explore our topics.",
+      "fallbackReplies": [
+        "You ask a question worthy of a thoughtful walk through Alexandria! The scribes of my court have no direct record of that specific matter, but we can explore my rule, Rome, Caesar, the Library, or my secrets. Ask me anything in your own words!",
+        "That matter lies beyond the knowledge of ancient Alexandria! Yet the court of the Ptolemies holds countless truths — ask of my romance with Mark Antony, the pearl in vinegar bet, the Great Library, or how I governed Egypt."
+      ],
+      "defaultSuggestions": [
+        "Did you really hide inside a carpet?",
+        "Did a snake really bite you?",
+        "Were you Greek or Egyptian?",
+        "What options and topics can I ask about?"
+      ]
+    }
+  ]
+}
