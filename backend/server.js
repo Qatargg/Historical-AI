@@ -24,6 +24,11 @@ async function getArchive() {
   return JSON.parse(file);
 }
 
+
+
+
+
+
 app.get('/api/health', (_request, response) => {
   response.json({ status: 'ok', service: 'echoes-archive' });
 });
